@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن - شركة المهندس</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <!-- الهيدر -->
+  <header>
+    <!-- يمكنك نسخ كود الـHeader من موقعك الرئيسي -->
+     <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/Artboard 1.png" alt=""> </a>
+
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+
+                            <option value="All Category">All Category</option>
+                            <option value="Electronics & Digita">Electronics & Digita</option>
+                            <option value="Phones & Tablet">Phones & Tablet</option>
+                            <option value="Fashion & Clothings">Fashion & Clothings</option>
+                            <option value="Telivsion & Monitor">Telivsion & Monitor</option>
+                            <option value="Jewelry & Watches">Jewelry & Watches</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                            <option value="Toys & Hobbies">Toys & Hobbies</option>
+
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse Category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                            
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">Top 10 Offers</a>
+                            <a href="#">Electronics & Digita</a>
+                            <a href="#">Phones & Tablet</a>
+                            <a href="#">Fashion & clothings</a>
+                            <a href="#">Telivsion & Monitor</a>
+                            <a href="#">Jewelty & Watches</a>
+                            <a href="#">Toys & Hobbies</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+   
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="index.html">الرئيسية</a></li>
+                        <li><a href="product.html">جميع المنتجات</a></li>
+                        <li><a href="#">الاكسسوارات</a></li>
+                        <li><a href="#">طلبيتي</a></li>
+                        <li><a href="#">من نحن</a></li>
+
+                    </ul>
+
+
+                </nav>
+
+
+            </div>
+        </div>
+
+
+    </header>
+  </header>
+
+  <!-- قسم البانر -->
+  <section class="about_banner">
+    <div class="container">
+      <h1>من نحن</h1>
+      <p>نضع الجودة في مقدمة أولوياتنا لنقدم لكم أفضل المنتجات والخدمات</p>
+    </div>
+  </section>
+
+  <!-- قسم المحتوى -->
+  <section class="about_section">
+    <div class="container">
+      <div class="about_content">
+        <div class="text">
+          <h2>شركة المهندس للتجارة والصناعة</h2>
+          <p>
+            تأسست شركة المهندس منذ أكثر من 20 عامًا لتكون واحدة من الشركات الرائدة في مجال
+            بيع وتوزيع الأدوات الصناعية وقطع الغيار، مع التزام تام بتقديم أفضل الحلول
+            والخدمات التي تلبي احتياجات عملائنا في مختلف القطاعات.
+          </p>
+
+          <p>
+            نفخر بأننا نعمل وفق أعلى معايير الجودة والدقة، مع فريق متخصص يسعى دائمًا
+            لتطوير المنتجات وتقديم الاستشارات الفنية التي تساعد عملاءنا في تحقيق النجاح.
+          </p>
+
+          <div class="mission_vision">
+            <div class="box">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3>رؤيتنا</h3>
+              <p>أن نكون الخيار الأول في السوق المحلي والعربي في مجال المعدات الصناعية.</p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-handshake"></i>
+              <h3>رسالتنا</h3>
+              <p>تقديم منتجات وخدمات موثوقة تُسهم في دعم الصناعة والمشاريع بكل احترافية.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المميزات -->
+  <section class="features">
+    <div class="container">
+      <h2 class="title">لماذا تختارنا؟</h2>
+      <div class="features_grid">
+        <div class="feature_box">
+          <i class="fa-solid fa-certificate"></i>
+          <h4>منتجات أصلية 100%</h4>
+          <p>نضمن أن جميع منتجاتنا أصلية وتخضع لاختبارات جودة دقيقة.</p>
+        </div>
+        <div class="feature_box">
+          <i class="fa-solid fa-headset"></i>
+          <h4>دعم فني مستمر</h4>
+          <p>فريقنا جاهز دائمًا للرد على استفساراتكم وحل مشاكلكم بسرعة وكفاءة.</p>
+        </div>
+        <div class="feature_box">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>توصيل سريع وآمن</h4>
+          <p>نضمن وصول الطلبات إلى جميع المناطق بأسرع وقت ممكن.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  
+    <!-- انسخ كود الفوتر من صفحتك الرئيسية -->
+     <footer>
+        <div class="container">
+            <div class="big_row">
+                <img class="logo_footer" src="img/Artboard 1.png" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repudiandae.</p>
+
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+
+                        <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+                        <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>شركة المهندس.</span> جميع الحقوق محفوظة
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+</body>
+</html>
