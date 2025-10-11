@@ -1,0 +1,238 @@
+/* ============================= */
+/* 🛒 صفحة سلة التسوق - شركة المهندس */
+/* ============================= */
+
+/* تنسيق الخلفية العامة */
+body {
+  background-color: #f8f9fb;
+  font-family: "Cairo", sans-serif;
+  color: var(--color_heading);
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== رأس الصفحة ====== */
+.top_header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+}
+
+.top_header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 130px;
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== الحاوية الرئيسية ====== */
+.cart-page-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 70px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.7s ease;
+}
+
+.cart-page-container h1 {
+  font-size: 26px;
+  color: var(--main_color);
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ====== عناصر السلة ====== */
+#cart-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 150px;
+}
+
+/* تنسيق بطاقة كل منتج في السلة */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: 0.3s ease;
+}
+
+.cart-item:hover {
+  background: #f1f8ff;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.cart-item-info h3 {
+  font-size: 18px;
+  color: var(--color_heading);
+  margin-bottom: 6px;
+}
+
+.cart-item-info p {
+  font-size: 14px;
+  color: var(--p_color);
+  margin: 0;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-quantity button {
+  background: var(--main_color);
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.cart-item-quantity button:hover {
+  background: #000;
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: var(--main_color);
+  font-size: 16px;
+}
+
+.remove-item {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.remove-item:hover {
+  transform: scale(1.1);
+}
+
+/* ====== ملخص السلة ====== */
+.cart-summary {
+  border-top: 2px solid #eee;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-summary .total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cart-summary h3 {
+  font-size: 20px;
+  color: var(--color_heading);
+  margin: 0;
+}
+
+#cart-total-price {
+  color: var(--main_color);
+}
+
+/* ====== زر الدفع ====== */
+.btn {
+  background-color: var(--main_color);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+}
+
+/* ====== حركة الظهور ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== تصميم للجوال ====== */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item img {
+    margin-bottom: 10px;
+  }
+
+  .cart-item-info {
+    margin: 0;
+  }
+
+  .cart-summary .total {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* ====== ألوان الموقع الموحدة ====== */
+:root{
+    --main_color : #ff8716;
+    --p_color: #7b7b7b;
+    --bg_color: #F3F3F3;
+    --white_color: #fff;
+    --color_heading: #121416;
+    --border_color: #e5e5e5d5;
+    --Sale_color: #E51A1A;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق - شركة المهندس</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+
+</head>
+<body>
+
+    <header>
+        <!-- يمكنك وضع الهيدر الكامل الخاص بموقعك هنا -->
+        <div class="top_header">
+            <div class="container">
+                <a href="index.html" class="logo"> <img src="img/Artboard 1.png" alt=""> </a>
+                <!-- ... باقي أيقونات الهيدر ... -->
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page-container">
+        <div class="container">
+            <h1>سلة التسوق الخاصة بك</h1>
+            
+            <!-- هذا هو القسم الذي سنعرض فيه عناصر السلة -->
+            <div id="cart-items-wrapper">
+                <p>جاري تحميل محتويات السلة...</p>
+            </div>
+
+            <!-- قسم لعرض الإجمالي وزر الدفع -->
+            <div class="cart-summary">
+                <div class="total">
+                    <h3>الإجمالي:</h3>
+                    <h3 id="cart-total-price">0.00 ريال</h3>
+                </div>
+                <button id="checkout-button" class="btn">الانتقال إلى الدفع</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <!-- ... الفوتر الخاص بموقعك ... -->
+    </footer>
+
+    <!-- ربط ملف JavaScript الخاص بصفحة سلة التسوق -->
+    <script src="js/cart.js"></script>
+</body>
+</html>
